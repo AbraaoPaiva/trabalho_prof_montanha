@@ -6,6 +6,8 @@ import Loadable from 'ui-component/Loadable';
 
 // dashboard routing
 const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')));
+const Comanda = Loadable(lazy(() => import('views/comanda/Default')));
+const MinhasComandas = Loadable(lazy(() => import('views/listaComandas/Default')));
 const Carteira = Loadable(lazy(() => import('views/pages/carteira')));
 
 const UtilsMaterialIcons = Loadable(lazy(() => import('views/utilities/MaterialIcons')));
@@ -13,7 +15,7 @@ const UtilsTablerIcons = Loadable(lazy(() => import('views/utilities/TablerIcons
 
 // sample page routing
 const SamplePage = Loadable(lazy(() => import('views/sample-page')));
-
+const RegistrarCarteira = Loadable(lazy(() => import('views/pages/registrarCarteira/registrarCarteira')));
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
@@ -34,11 +36,20 @@ const MainRoutes = {
             ]
         },
         {
-            path: 'carteira',
+            path: '/',
             children: [
                 {
-                    path: 'default',
-                    element: <Carteira />
+                    path: 'comanda',
+                    element: <Comanda />
+                }
+            ]
+        },
+        {
+            path: '/',
+            children: [
+                {
+                    path: 'minhas-comandas',
+                    element: <MinhasComandas />
                 }
             ]
         },

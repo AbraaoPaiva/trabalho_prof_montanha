@@ -11,7 +11,6 @@ const icons = {
 const pages = {
     id: 'pages',
     title: 'Páginas de login',
-    caption: '*Falta integracao*',
     type: 'group',
     children: [
         {

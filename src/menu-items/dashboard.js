@@ -18,6 +18,22 @@ const dashboard = {
             url: '/dashboard/default',
             icon: icons.IconDashboard,
             breadcrumbs: false
+        },
+        {
+            id: 'default',
+            title: 'Comanda',
+            type: 'item',
+            url: '/comanda',
+            icon: icons.IconDashboard,
+            breadcrumbs: false
+        },
+        {
+            id: 'default',
+            title: 'Minhas comandas',
+            type: 'item',
+            url: '/minhas-comandas',
+            icon: icons.IconDashboard,
+            breadcrumbs: false
         }
     ]
 };

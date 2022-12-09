@@ -39,6 +39,26 @@ const Register = () => {
                                                         gutterBottom
                                                         variant={matchDownSM ? 'h3' : 'h2'}
                                                     >
+                                                        Comanda para todos
+                                                    </Typography>
+                                                </Stack>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Grid
+                                            container
+                                            direction={matchDownSM ? 'column-reverse' : 'row'}
+                                            alignItems="center"
+                                            justifyContent="center"
+                                        >
+                                            <Grid item>
+                                                <Stack alignItems="center" justifyContent="center" spacing={1}>
+                                                    <Typography
+                                                        color={theme.palette.secondary.main}
+                                                        gutterBottom
+                                                        variant={matchDownSM ? 'h3' : 'h2'}
+                                                    >
                                                         Registre-se
                                                     </Typography>
                                                     <Typography
